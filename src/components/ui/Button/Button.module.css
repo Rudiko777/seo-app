@@ -52,6 +52,69 @@
     transition: all 0.3s linear;
 }
 
+.secondary{
+    color: var(--black-light);
+    background-color: var(--button-secondaryLightGray);
+}
+
+.secondaryOutline{
+    color: var(--black-light);
+    background-color: transparent;
+    outline: 1px solid var(--input-border);
+}
+
+.secondary,
+.secondaryOutline,
+.white,
+.whiteOutline,
+.dark,
+.darkOutline{
+    transition: all 0.3s linear;
+}
+
+.secondary:hover,
+.secondaryOutline:hover{
+    background-color: var(--input-border);
+    outline: none;
+    color: var(--black-light);
+}
+
+.white{
+    color: var(--black-light);
+    background-color: var(--white);
+}
+
+.whiteOutline{
+    color: var(--white);
+    background-color: transparent;
+    outline: 1px solid var(--white);
+}
+
+.white:hover,
+.whiteOutline:hover{
+    background-color: var(--white);
+    color: var(--black);
+    outline: none;
+}
+
+.dark{
+    color: var(--white);
+    background-color: var(--black-light);
+}
+
+.darkOutline{
+    color: var(--black-light);
+    background-color: var(--white);
+    outline: 1px solid var(--black-light);
+}
+
+.dark:hover,
+.darkOutline:hover{
+    background-color: var(--black);
+    outline: none;
+    color: var(--white);
+}
+
 .ghost:hover{
     color: var(--white);
     background-color: var(--primary);

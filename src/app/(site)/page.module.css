@@ -1,0 +1,83 @@
+.main{
+    display: grid;
+    grid-template-columns: auto minmax(320px, 1230px) auto;
+    grid-template-areas:
+    '. box1 .'
+    '. box2 .'
+    '. box3 .'
+    '. box4 .'
+    '. box5 .'
+    'cta cta cta'
+    '. box7 .'
+    'hhh hhh hhh'
+    '. box9 .'
+    '. box10 .'
+    '. box11 .'
+    '. box12 .';
+}
+
+.info{
+    grid-area: box1;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+    'infoText . awards';
+}
+
+.infoAward{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 41px;
+    grid-row-gap: 4px;
+    grid-area: awards;
+}
+
+.pText{
+    grid-area: infoText;
+    max-width: 630px;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
+.box4{
+    grid-area: box4;
+}
+
+.box5{
+    grid-area: box5;
+}
+
+.cta{
+    grid-area: cta;
+}
+
+.box7{
+    grid-area: box7;
+}
+
+.caseStudies{
+    grid-area: hhh;
+}
+
+.box9{
+    grid-area: box9;
+}
+
+.box10{
+    grid-area: box10;
+}
+
+.box11{
+    grid-area: box11;
+}
+
+.box12{
+    grid-area: box12;
+}

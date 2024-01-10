@@ -1,0 +1,9 @@
+.award{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pBox{
+    max-width: 136px;
+}

@@ -1,0 +1,32 @@
+.header{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 130px 2fr auto;
+    grid-template-areas:
+    'logo navbar button';
+    grid-column-gap: 60px;
+    align-items: center;
+}
+
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    gap: 40px;
+}
+
+.link{
+    color: rgba(255,255,255,0.6);
+    transition: all 0.3s linear;
+}
+
+.link:hover{
+    color: rgba(255,255,255,1);
+}
+
+.button{
+    grid-area: button;
+}
+
+.logo{
+    grid-area: logo;
+}

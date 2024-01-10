@@ -1,0 +1,12 @@
+.link{
+    color: rgba(255,255,255,0.6);
+    transition: all 0.3s linear;
+}
+
+.link:hover{
+    color: rgba(255,255,255,1);
+}
+
+.active{
+    color: var(--white) !important;
+}

@@ -1,0 +1,12 @@
+.title{
+    color: var(--white);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+.filled{
+    color: var(--primary) !important;
+}

@@ -1,0 +1,25 @@
+.playButton{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    font-weight: 700;
+    overflow: visible;
+    transition: all 0.5s ease-in-out;
+}
+
+.large{
+    width: 80px;
+    height: 80px;
+}
+
+.small{
+    width: 52px;
+    height: 52px;
+}
+
+.playButton:hover{
+    outline: 16px solid rgba(119, 114, 241, 0.12);
+
+}
