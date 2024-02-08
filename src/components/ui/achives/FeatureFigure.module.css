@@ -1,0 +1,46 @@
+.achiveContainer{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--orange);
+    border-radius: 50%;
+    background-image: linear-gradient(to right, blue 50%, red 50%);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.orange{
+    stroke: var(--orange);
+}
+
+.pink{
+    stroke: var(--pink);
+}
+
+.green{
+    stroke: var(--green);
+}
+
+.blue{
+    stroke: var(--blue);
+}
+
+.percent{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
