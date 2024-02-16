@@ -1,0 +1,23 @@
+.containerNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Htag{
+    font-size: 60px;
+    color: var(--black);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link{
+    font-size: 60px;
+    color: var(--black);
+    text-align: center;
+}

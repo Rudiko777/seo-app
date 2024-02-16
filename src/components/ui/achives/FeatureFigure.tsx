@@ -1,9 +1,9 @@
 import React, {JSX} from 'react';
-import styles from './Engagement.module.css'
-import {EngagementProps} from "@/components/ui/achives/Engagement.props";
+import styles from './FeatureFigure.module.css'
+import {FeatureFigureProps} from "@/components/ui/achives/FeatureFigure.props";
 import cn from 'classnames'
 
-const Feature = ({percent, title, color, ...props}:EngagementProps): JSX.Element => {
+const FeatureFigure = ({percent, title, color, ...props}:FeatureFigureProps): JSX.Element => {
     let colorPath: string;
 
     switch (color){
@@ -27,7 +27,7 @@ const Feature = ({percent, title, color, ...props}:EngagementProps): JSX.Element
         <div className={styles.achiveContainer} {...props}>
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <g clip-path="url(#clip0_9081_3015)">
-                    <circle opacity="0.3" cx="20" cy="20" r="18" className={cn({
+                    <circle opacity={percent >= 100 ? '1' : '0.3'} cx="20" cy="20" r="18" className={cn({
                         [styles.pink]: color === 'pink',
                         [styles.orange]: color === 'orange',
                         [styles.green]: color === 'green',
@@ -51,4 +51,4 @@ const Feature = ({percent, title, color, ...props}:EngagementProps): JSX.Element
     );
 };
 
-export default Feature;
+export default FeatureFigure;

@@ -7,6 +7,7 @@ import PasswordIcon from './password.svg'
 import SearchIcon from './search.svg'
 import LargeChooseIcon from './LargeArrowDown.svg'
 import SmallChooseIcon from './SmallArrowDown.svg'
+import ArrowRight from './arrowRight.svg'
 
 // eslint-disable-next-line react/display-name
 const Input = React.forwardRef((
@@ -57,7 +58,7 @@ const Input = React.forwardRef((
     }, [value]);
 
     return (
-        <div className={styles.inputWrapper}>
+        <div className={cn(styles.inputWrapper)}>
             {!label || label === '' || label === undefined ? (<></>) :
                 (<label className={cn(styles.label, {
                     [styles.darkLabel]: theme === 'dark',
@@ -81,7 +82,9 @@ const Input = React.forwardRef((
                         [styles.errorFilled]: state === 'errorFilled',
                         [styles.inputLarge]: inputSize === 'large',
                         [styles.inputMedium]: inputSize === 'medium',
-                        [styles.inputSmall]: inputSize === 'small'
+                        [styles.inputSmall]: inputSize === 'small',
+                        [styles.darkInput]: theme === 'dark',
+                        [styles.lightInput]: theme === 'light'
                     })}
                     placeholder={placeholder}
                     value={inputValue}
@@ -103,13 +106,20 @@ const Input = React.forwardRef((
                     ) : null
                 }
                 {
-                    type === 'choose' && (inputSize === 'large' || inputSize === 'medium') ? (
+                    type === 'choose' && inputSize === 'large' ? (
                         <LargeChooseIcon className={cn(styles.largeChooseIcon)}/>
                     ) : null
                 }
                 {
-                    type === 'choose' && inputSize === 'small' ? (
+                    type === 'choose' && (inputSize === 'small' || inputSize === 'medium') ?  (
                         <SmallChooseIcon className={cn(styles.smallChooseIcon)}/>
+                    ) : null
+                }
+                {
+                    type === 'emailFromFooter' ? (
+                        <button className={styles.btnEmailInputFooter}>
+                            <ArrowRight className={cn(styles.arrowRightIcon)}/>
+                        </button>
                     ) : null
                 }
             </div>

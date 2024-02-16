@@ -13,7 +13,8 @@ const Ptag = ({children, className, type, ...props}: PtagProps): JSX.Element => 
             [styles.medium]: type === 'medium',
             [styles.small]: type === 'small',
             [styles.general]: type === 'general',
-            [styles.award]: type === 'award'
+            [styles.award]: type === 'award',
+            [styles.muchSmall]: type === 'muchSmall'
         })} {...props}>
             {children}
         </p>

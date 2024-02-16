@@ -1,6 +1,5 @@
 import React, {FunctionComponent, JSX} from 'react';
 import {MainLayoutProps} from "@/layouts/MainLayout/MainLayout.props";
-import Header from "@/components/semantic/Header/Header";
 import Footer from "@/components/semantic/Footer/Footer";
 import styles from './MainLayout.module.css'
 import TitleSeoApp from "@/screens/TitleSeoApp/TitleSeoApp";

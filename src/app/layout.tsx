@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import {Lato} from 'next/font/google'
-import './globals.css'
+import './(site)/globals.css'
 import {NextFont} from "next/dist/compiled/@next/font";
 import StoreProvider from "@/redux/storeProvider";
 

@@ -13,10 +13,6 @@ const NavbarLink = ({children, href, ...props}: NavbarLinkProps): JSX.Element =>
 
     useEffect(() => {
         const url = `${pathname}${searchParams}`
-        console.log(url)
-        console.log(url.includes(`${children}`))
-        // You can now use the current URL
-        // ...
         if(url.includes(href)){
             setActive(!active)
         }
