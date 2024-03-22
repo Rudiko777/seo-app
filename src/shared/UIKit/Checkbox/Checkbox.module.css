@@ -1,0 +1,47 @@
+.checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkboxLabel {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--black-light);
+}
+
+.disabledLabel{
+    opacity: 0.5;
+}
+
+.checkboxView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    background: var(--white);
+    transition: .3s;
+}
+
+.checkboxIcon {
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.checkbox:checked + .checkboxView {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.checkbox:checked + .checkboxView .checkboxIcon {
+    opacity: 1;
+}

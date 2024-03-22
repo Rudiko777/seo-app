@@ -9,11 +9,12 @@
   --blue: #5A87FC;
   --green: #03CEA4;
   --gray: #9A9CA5;
+  --gray-switch: #b3b7bc;
   --primary-hover: #504AED;
   --input-placeholder: #9A9CA5;
   --input-border: #D7DADD;
   --input-background: #F4F5F6;
-
+  --copyrightBack: #292C37;
   --button-secondaryLightGray: #E5E8ED;
 }
 

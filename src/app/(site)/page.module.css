@@ -38,12 +38,34 @@
     max-width: 630px;
 }
 
-.box2{
+.clients{
     grid-area: box2;
+    padding: 180px 0 170px;
 }
 
-.box3{
+.about{
     grid-area: box3;
+    position: relative;
+    margin-bottom: 700px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.aboutShape{
+    position: absolute;
+    left: -190px;
+    top: -120px;
+    z-index: -1;
+}
+
+.aboutInfo{
+    margin-top: 80px;
+}
+
+.aboutInfoP{
+    max-width: 390px;
+    margin-top: 40px;
+    margin-bottom: 48px;
 }
 
 .box4{
@@ -56,6 +78,16 @@
 
 .cta{
     grid-area: cta;
+    background-color: var(--input-background);
+    display: grid;
+    grid-template-columns: auto minmax(320px, 1230px) auto;
+    grid-template-areas:
+    '. ctaContent .'
+}
+
+.ctaContent{
+    grid-area: ctaContent;
+    padding: 80px 0;
 }
 
 .box7{
@@ -80,4 +112,8 @@
 
 .box12{
     grid-area: box12;
+}
+
+.test{
+    filter: brightness(0.5);
 }

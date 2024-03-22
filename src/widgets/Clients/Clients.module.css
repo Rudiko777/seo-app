@@ -1,0 +1,13 @@
+.clientsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}

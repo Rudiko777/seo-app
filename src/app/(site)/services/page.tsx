@@ -1,6 +1,6 @@
 import React from 'react';
-import {withMainLayout} from "@/layouts/MainLayout/MainLayout";
-import NavbarLink from "@/components/ui/NavbarLink/NavbarLink";
+import {withMainLayout} from "@/shared/layouts/MainLayout/MainLayout";
+import NavbarLink from "@/shared/UIKit/NavbarLink/NavbarLink";
 
 const Page = () => {
     return (

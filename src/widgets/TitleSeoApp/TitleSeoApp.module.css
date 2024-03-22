@@ -1,0 +1,86 @@
+.titleComponent{
+    display: grid;
+    grid-template-columns: auto minmax(320px, 1230px) auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    '. header .'
+    '. body .';
+    position: relative;
+}
+
+.titleComponent::after{
+    position: absolute;
+    content: '';
+    background-image: url("../../../public/images/TitleSeoApp/BackgroundTitle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.greenLineSmall{
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+
+.greenLineMedium{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.header{
+    grid-area: header;
+}
+
+.body{
+    grid-area: body;
+    position: relative;
+}
+
+.titleContainer{
+    max-width: 810px;
+    margin-top: 200px;
+}
+
+.analysBox{
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.playVideo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.playVideoText{
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.features{
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradientBranch{
+    width: 1px;
+    height: 40px;
+    opacity: 0.4;
+    background: linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+}
